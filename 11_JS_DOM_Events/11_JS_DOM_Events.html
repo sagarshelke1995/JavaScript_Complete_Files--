@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS DOM Events</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<nav>
+    <a href="#">JS DOM Events</a>
+</nav>
+
+<div>
+    <h1 id="msg"></h1>
+    <button type="button" onclick="changeWishMessage('Good Morning','yellow');">Good Morning</button>
+    <button type="button" onclick="changeWishMessage('Good Afternoon','blueviolet');">Good Afternoon</button>
+    <button type="button" onclick="changeWishMessage('Good Evening','orange');">Good Evening</button>
+    <button type="button" onclick="changeWishMessage('Good Night','purple');">Good Night</button>
+</div>
+
+<div>
+    <img src="../img/image7.jpeg" id="laptop-image">
+    <button onclick="changeImage('image1.jpg')">Image 1</button>
+    <button onclick="changeImage('image2.jpg')">Image 2</button>
+    <button onclick="changeImage('image3.jpeg')">Image 3</button>
+    <button onclick="changeImage('image4.jpeg')">Image 4</button>
+    <button onclick="changeImage('image5.jpeg')">Image 5</button>
+    <button onclick="changeImage('image6.jpeg')">Image 6</button>
+</div>
+
+<script src="11_script.js"></script>
+</body>
+</html>

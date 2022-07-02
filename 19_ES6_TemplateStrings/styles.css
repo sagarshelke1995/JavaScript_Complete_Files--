@@ -1,0 +1,17 @@
+table , th , td{
+    border: 2px solid orangered;
+    text-align: center;
+    border-collapse: collapse;
+    padding: 15px;
+}
+thead{
+    background-color: orangered;
+    color: white;
+}
+tbody{
+    background-color: lightsalmon;
+}
+table{
+    width: 80%;
+    margin: 50px auto;
+}

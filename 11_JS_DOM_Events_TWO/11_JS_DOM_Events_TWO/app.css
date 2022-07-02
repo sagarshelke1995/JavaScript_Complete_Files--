@@ -1,0 +1,51 @@
+body{
+    margin-bottom: 500px;
+}
+div{
+    text-align: center;
+    background-color: lightgreen;
+    padding: 15px;
+    margin: 15px;
+}
+button{
+    font-size: 20px;
+    padding: 10px 25px;
+}
+#laptop-image{
+    width: 400px;
+    height: 250px;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+}
+input[type='text'] , input[type='password'] ,select{
+    font-size: 20px;
+    height: 35px;
+    outline: none;
+}
+h2{
+    margin-top: 5px;
+}
+textarea{
+    font-size: 20px;
+    outline: none;
+    border-radius: 5px;
+}
+span{
+    color: red;
+    font-weight: bolder;
+    font-size: 25px;
+}
+#triangle-div{
+    background-color: yellow;
+    width: 300px;
+    margin: auto;
+}
+pre{
+    text-align: left;
+}
+input[type='checkbox']{
+    width: 20px;
+    height: 20px;
+}

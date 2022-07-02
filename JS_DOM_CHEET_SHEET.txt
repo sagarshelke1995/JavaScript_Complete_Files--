@@ -1,0 +1,106 @@
+DOM Manipulation Cheat Sheet
+----------------------------
+    1) get any HTML element with Tag
+    Syntax : document.querySelector('tagName');
+Ex:      document.querySelector('img');
+
+2) get any HTML element with Id
+    Syntax : document.querySelector('#idName');
+Ex:      document.querySelector('#abc');
+
+3) get any HTML element with class Name
+    Syntax : document.querySelector('.className');
+Ex:      document.querySelector('.test');
+
+4) To change the text between the tags
+
+Ex: <h1 id='msg'>Good Morning</h1>
+let h1Tag = document.querySelector('#msg');
+h1Tag.innerText = "Good Evening";
+
+5) to Add a new HTML Snippet to another html element
+
+Ex: <h1>...........</h1>
+
+let htmlSnippet = `<span>Hello</span>`;
+let h1Tag = document.querySelector('h1');
+h1Tag.innerHTML = htmlSnippet;
+
+6) To Get any form field Value
+
+Ex: <input type="text" id="input-field">
+    let inputField = document.querySelector('#input-field');
+let textEntered = inputField.value; // get the textbox value
+
+Ex: <select id="select-box">....</select>
+let selectBox = document.querySelector('select-box');
+let selectedOption = selectBox.value; // get each option value
+
+7) to get attribute of any html element
+Ex: <img src="abc.jpg" width="100" height="200" id="img-tag">
+
+    let imageTag = document.querySelector('#img-tag');
+imageTag.getAttribute('src'); // abc.jpg
+imageTag.getAttribute('width'); // 100
+imageTag.getAttribute('height'); // 200
+imageTag.getAttribute('id'); // img-tag
+
+8) to set a new attribute value to html element
+Ex: <img src="abc.jpg" width="100">
+    let imageTag = document.querySelector('#img-tag');
+imageTag.setAttribute('src','facebook.jpg'); //change image to facebook
+imageTag.setAttribute('width','200'); // width change to 200
+
+9) change the styles of any html element
+Ex: <h1 id='h1-tag'>Good Morning</h1>
+
+let h1Tag = document.querySelector('h1-tag');
+h1Tag.style.backgroundColor = 'black';
+h1Tag.style.padding = '10px';
+h1Tag.style.boxShadow = '0 0 10px black';
+
+10) Create new HTML element
+Ex: <div id='div-tag'>
+...
+</div>
+Ex: let h1Tag = document.createElement('h1');
+h1Tag.innerText = 'Good Morning';
+h1Tag.style.backgroundColor = 'black';
+h1Tag.style.padding = '10px';
+h1Tag.style.boxShadow = '0 0 10px black';
+let divTag = document.querySelector('#div-tag');
+divTag.appendChild(h1Tag);
+RESULT:
+    <div id='div-tag'>
+    <h1>Good Morning</h1>
+</div>
+
+11) Delete any HTML element from JS
+Ex: <div id="div-tag">
+    <h2>Good Morning</h2>
+</div>
+Ex: let h2Tag = document.querySelector('#div-tag h2');
+h2Tag.remove();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
